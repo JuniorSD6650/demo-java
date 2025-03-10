@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Gestión de Hábitos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/habitos.js"></script>
+</head>
+
+<body class="container mt-4">
+    <a href="/page/usuarios" class="btn btn-info mt-4">Ir a Usuarios</a>
+    <a href="/page/registros" class="btn btn-warning mt-4">Ir a Registros</a>
+    <a href="/" class="btn btn-secondary mt-4">Volver al inicio</a>
+    
+    <h1 class="text-center">Gestión de Hábitos</h1>
+
+    <!-- Lista de hábitos -->
+    <h2>Hábitos Disponibles</h2>
+    <ul id="habitos-list" class="list-group"></ul>
+
+    <!-- Formulario para agregar hábito -->
+    <h3 class="mt-4">Agregar Hábito</h3>
+    <div class="mb-3">
+        <input type="text" id="nombreHabito" class="form-control" placeholder="Nombre del hábito">
+    </div>
+    <div class="mb-3">
+        <select id="frecuenciaHabito" class="form-control">
+            <option value="Diario">Diario</option>
+            <option value="Semanal">Semanal</option>
+            <option value="Mensual">Mensual</option>
+        </select>
+    </div>
+    <button id="agregarHabito" class="btn btn-success">Agregar Hábito</button>
+
+    <a href="/" class="btn btn-secondary mt-4">Volver al inicio</a>
+</body>
+
+</html>

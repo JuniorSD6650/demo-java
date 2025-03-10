@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Gestor de Hábitos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="container mt-4">
+    <h1 class="text-center">Gestor de Hábitos</h1>
+
+    <div class="alert alert-info text-center mt-4" role="alert">
+        <h4>Sobre el Proyecto</h4>
+        <p>
+            Es un gestor de hábitos, que permite gestionar usuarios, hábitos y sus registros.
+            Implementa relaciones <strong>uno a muchos</strong> y <strong>muchos a muchos</strong>, aplicando
+            principios de <em>programación orientada a objetos</em> y <em>arquitectura MVC</em>.
+        </p>
+    </div>
+
+    <div class="text-center mt-4">
+        <h4>📂 Accede a las secciones del Gestor de Hábitos</h4>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="/page/usuarios" class="btn btn-primary">Usuarios</a>
+            <a href="/page/habitos" class="btn btn-success">Hábitos</a>
+            <a href="/page/registros" class="btn btn-warning">Registros</a>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header text-center">
+            <h4>Descripción del Proyecto</h4>
+        </div>
+        <div class="card-body">
+            <p>
+                Realizar un programa como caso práctico de lo aprendido en el curso,
+                empleando el paradigma de programación orientado a objetos, usando el
+                lenguaje de programación Java y el framework Spring.
+            </p>
+            <h5>📌 Requisitos:</h5>
+            <ul>
+                <li>
+                    <strong>Relación uno a muchos:</strong> El programa deberá emplear una base de datos en
+                    MySQL para gestionar los datos con Java y Spring Boot, aplicando una relación de
+                    <strong>uno a muchos</strong> entre las tablas.
+                </li>
+                <li>
+                    <strong>Relación muchos a muchos:</strong> Se debe aplicar una relación de <strong>muchos a
+                        muchos</strong>
+                    entre las entidades correspondientes.
+                </li>
+                <li>
+                    Implementación de la organización de paquetes en el proyecto,
+                    incluyendo entidades, servicios, repositorios, controladores y vistas.
+                </li>
+                <li>
+                    Se deben incluir las funcionalidades de <strong>registrar, buscar, listar, editar y
+                        eliminar</strong> en la aplicación.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
